@@ -115,7 +115,15 @@ f) We will use `qemu` emulator in this course. To do so, change the following:
 
    d) Build all the test with the target `check`: `make check`
 
-   Note: To see output on terminal, use `make VERBOSE=1 check`
+   Note: To see output on terminal, `use make VERBOSE=1 check`
+![1 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/fceef0cf-7def-403e-b4d2-5d594c71eddf)
+![2 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/9b6e53a6-daf5-44e5-8f4b-d656398365e1)
+![3 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/b865a8e6-58b5-49d9-98e0-a6e91c36b58d)
+![4 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/28968d3f-2aad-49a9-80f1-9209e3bfe479)
+
 
 
    Acknowledgement: This page is created based on https://www.ccs.neu.edu/home/skotthe/classes/cs5600/fall/2016/labs/pintos-setup.html
+
+
+   
