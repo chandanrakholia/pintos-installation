@@ -116,14 +116,56 @@ f) We will use `qemu` emulator in this course. To do so, change the following:
    d) Build all the test with the target `check`: `make check`
 
    Note: To see output on terminal, `use make VERBOSE=1 check`
-![1 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/fceef0cf-7def-403e-b4d2-5d594c71eddf)
-![2 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/9b6e53a6-daf5-44e5-8f4b-d656398365e1)
-![3 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/b865a8e6-58b5-49d9-98e0-a6e91c36b58d)
-![4 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/28968d3f-2aad-49a9-80f1-9209e3bfe479)
-
 
 
    Acknowledgement: This page is created based on https://www.ccs.neu.edu/home/skotthe/classes/cs5600/fall/2016/labs/pintos-setup.html
 
 
+
+
+
    
+# Troubleshooting Guide
+
+If you encounter an error while working with this project, follow the steps below for resolution.
+
+## Error: Missing stropts.h
+
+```shell
+gcc -Wall -W -C -o squish-pty.o squish-pty.c
+squish-pty.c:10:10: fatal error: stropts.h: No such file or directory
+10 | #include <stropts.h>
+compilation terminated.
+```
+![1 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/fceef0cf-7def-403e-b4d2-5d594c71eddf)
+
+## Do this
+
+## linux 
+```bash
+cd /usr/include
+sudo touch stropts.h
+```
+
+##  mac
+```bash
+cd /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include
+sudo touch stropts.h
+```
+```bash 
+cd /pathOfPintos/src/utils 
+```
+```shell
+open squish-pty.c and text editor and comment lines from 286-294.
+```
+![2 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/9b6e53a6-daf5-44e5-8f4b-d656398365e1)
+
+![3 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/b865a8e6-58b5-49d9-98e0-a6e91c36b58d)
+ 
+ ```bash
+ cd /pathOfPintos/src/utils
+ make
+ ```
+![4 jpg](https://github.com/chandanrakholia/pintos-installation/assets/106094072/28968d3f-2aad-49a9-80f1-9209e3bfe479)
+
+## installation is successful!!!
